@@ -25,22 +25,23 @@ if start == "y":
         print()
     if slot[0][0] == slot[0][1] and slot[0][0] == slot[0][2]:
        print("JACKPOT!!!")
+       print("You earned 1000 more score!!!")
        score = score + 1000
     if slot[1][0] == slot[1][1] and slot[1][0] == slot[1][2]:
        print("JACKPOT!!!")
+       print("You earned 1000 more score!!!")
        score = score + 1000
     if slot[2][0] == slot[2][1] and slot[2][0] == slot[2][2]:
        print("JACKPOT!!!")
-       print("JACKPOT!!!")
-       print("JACKPOT!!!")
+       print("You earned 1000 more score!!!")
        score = score + 1000
     if slot[0][0] == slot[1][1] and slot[0][0] == slot[2][2]:
        print("JACKPOT!!!")
+       print("You earned 1000 more score!!!")
        score = score + 1000
     if slot[2][0] == slot[1][1] and slot[2][0] == slot[0][2]:
        print("JACKPOT!!!")
-       print("JACKPOT!!!")
-       print("JACKPOT!!!")
+       print("You earned 1000 more score!!!")
        score = score + 1000
     play = input("Do you want to play again? (y or n): ")
     if play.lower() == "y":
@@ -49,6 +50,6 @@ if start == "y":
       break
   print("Thanks for playing")
 if start == "n":
-   print("Then get out of here")
+   print("Then get out of here.")
 if score < cost:
    print("Sorry, you can't play any more since you ran out of score.")
